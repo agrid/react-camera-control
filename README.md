@@ -1,4 +1,5 @@
 # react-camera-control
+[![NPM](https://img.shields.io/npm/v/react-camera-control.svg)](https://www.npmjs.com/package/react-camera-control) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 The objective of this package is to support both web camera and onvif camera for pan-tilt-zoom control. Non pan-tilt-zoom camera can also use package to display and capture video feed.
 
@@ -18,8 +19,6 @@ The objective of this package is to support both web camera and onvif camera for
 - react-dom: >=15.0.0
 - prop-types: >=15.5.4
 - Chrome version: > 57
-
-[![NPM](https://img.shields.io/npm/v/react-camera-control.svg)](https://www.npmjs.com/package/react-camera-control) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## LiveDemo
 [Demo of react-camera-control](https://agrid.github.io/react-camera-control/)
