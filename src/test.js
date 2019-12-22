@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import ReactCameraControl from './'
 
-describe('ExampleComponent', () => {
+describe('ReactCameraControl', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(ReactCameraControl).toBeTruthy()
   })
 })
