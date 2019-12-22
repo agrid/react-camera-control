@@ -1,8 +1,28 @@
 # react-camera-control
 
-> React camera pan-tilt-zoom control
+The objective of this package is to support both web camera and onvif camera for pan-tilt-zoom control. Non pan-tilt-zoom camera can also use package to display and capture video feed.
+
+## Features:
+- [x] Web camera photo taking
+- [x] Web camera zoom control
+- [ ] Web camera pan control
+- [ ] Web camera tilt control
+- [ ] Onvif camera photo taking
+- [ ] Onvif camera zoom control
+- [ ] Onvif camera pan control
+- [ ] Onvif camera tilt control
+- [ ] Camera list
+
+## Requirement
+- react: >=15.0.0
+- react-dom: >=15.0.0
+- prop-types: >=15.5.4
+- Chrome version: > 57
 
 [![NPM](https://img.shields.io/npm/v/react-camera-control.svg)](https://www.npmjs.com/package/react-camera-control) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+## LiveDemo
+[Demo of react-camera-control](https://agrid.github.io/react-camera-control/)
 
 ## Install
 
@@ -65,6 +85,12 @@ const styles = {
   }
 }
 ```
+
+## Reference
+- [MDN web docs - MediaDevices.getUserMedia()](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia)
+- [Google Take Photos and Control Camera Settings](https://developers.google.com/web/updates/2016/12/imagecapture)
+- [React Camera](https://www.npmjs.com/package/react-camera)
+- [jslib-html5-camera-photo](https://www.npmjs.com/package/jslib-html5-camera-photo)
 
 ## License
 
