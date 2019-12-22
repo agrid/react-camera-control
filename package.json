@@ -4,6 +4,7 @@
   "description": "React camera pan-tilt-zoom control",
   "author": "agrid",
   "license": "MIT",
+  "homepage": "https://agrid.github.io/react-camera-control",
   "repository": "agrid/react-camera-control",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

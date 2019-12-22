@@ -7,7 +7,8 @@ class ReactCameraControl extends React.Component {
 
     this.state = {
       videoTrack: null,
-      capabilities: null
+      capabilities: null,
+      errorMessage: null
     }
   }
 
@@ -32,9 +33,16 @@ class ReactCameraControl extends React.Component {
         await this.video.play()
       } catch (e) {
         console.error(e)
+        this.setState({
+          errorMessage: e.name
+        })
       }
     } else {
-      console.error('Check browser compatibility - Chrome > 57')
+      const errorMessage = 'Check browser compatibility - Chrome > 57'
+      console.error(errorMessage)
+      this.setState({
+        errorMessage
+      })
     }
   }
 
@@ -58,9 +66,10 @@ class ReactCameraControl extends React.Component {
 
   render() {
     if (this.state.videoTrack === null) {
+      console.log(this.state.errorMessage)
       return (
         <div>
-          Loading...
+          {this.state.errorMessage || 'loading...'}
         </div>
       )
     }

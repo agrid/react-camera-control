@@ -18,7 +18,7 @@ The objective of this package is to support both web camera and onvif camera for
 - react: >=15.0.0
 - react-dom: >=15.0.0
 - prop-types: >=15.5.4
-- Chrome version: > 57
+- Chrome Desktop version: > 57
 
 ## LiveDemo
 [Demo of react-camera-control](https://agrid.github.io/react-camera-control/)
