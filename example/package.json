@@ -1,7 +1,7 @@
 {
   "name": "react-camera-control-example",
-  "homepage": "https://github.com/agrid/react-camera-control",
-  "version": "0.0.0",
+  "homepage": "https://agrid.github.io/react-camera-control",
+  "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {

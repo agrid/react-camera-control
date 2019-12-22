@@ -13,26 +13,33 @@ class ReactCameraControl extends React.Component {
 
   async componentDidMount() {
     const {video, audio} = this.props
+
     if (navigator.mediaDevices) {
-      const mediaStream = await navigator.mediaDevices.getUserMedia({video, audio})
-      const videoTrack = mediaStream.getVideoTracks()[0]
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({video, audio})
+        const videoTrack = stream.getVideoTracks()[0]
 
-      // Before crbug.com/711524 is fixed, this is needed to retrieve capabilities.
-      await this.sleep(1000)
-      const capabilities = videoTrack.getCapabilities()
+        // Before crbug.com/711524 is fixed, this is needed to retrieve capabilities.
+        await this.sleep(1000)
+        const capabilities = videoTrack.getCapabilities()
 
-      this.setState({
-        videoTrack,
-        capabilities
-      })
+        this.setState({
+          videoTrack,
+          capabilities
+        })
 
-      this.video.srcObject = mediaStream
-      await this.video.play()
+        this.video.srcObject = stream
+        await this.video.play()
+      } catch (e) {
+        console.error(e)
+      }
+    } else {
+      console.error('Check browser compatibility - Chrome > 57')
     }
   }
 
   async sleep(ms = 0) {
-    return new Promise(r => setTimeout(r, ms))
+    return new Promise(resolve => { setTimeout(resolve, ms) })
   }
 
   capture() {
