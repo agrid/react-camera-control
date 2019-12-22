@@ -32,13 +32,13 @@ class ReactCameraControl extends React.Component {
         this.video.srcObject = stream
         await this.video.play()
       } catch (e) {
-        console.error(e)
+        console.error(e.stackTrace)
         this.setState({
           errorMessage: e.name
         })
       }
     } else {
-      const errorMessage = 'Check browser compatibility - Chrome > 57'
+      const errorMessage = 'Error loading camera. Your browser may not support this feature'
       console.error(errorMessage)
       this.setState({
         errorMessage
