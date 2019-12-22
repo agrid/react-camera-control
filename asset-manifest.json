@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-camera-control/static/css/main.a2b7b0b6.chunk.css",
+    "main.js": "/react-camera-control/static/js/main.40b6f3ef.chunk.js",
+    "main.js.map": "/react-camera-control/static/js/main.40b6f3ef.chunk.js.map",
+    "runtime-main.js": "/react-camera-control/static/js/runtime-main.7d5abbff.js",
+    "runtime-main.js.map": "/react-camera-control/static/js/runtime-main.7d5abbff.js.map",
+    "static/js/2.d55809eb.chunk.js": "/react-camera-control/static/js/2.d55809eb.chunk.js",
+    "static/js/2.d55809eb.chunk.js.map": "/react-camera-control/static/js/2.d55809eb.chunk.js.map",
+    "index.html": "/react-camera-control/index.html",
+    "precache-manifest.db15319b9040de8f8d6878d2662bd0e6.js": "/react-camera-control/precache-manifest.db15319b9040de8f8d6878d2662bd0e6.js",
+    "service-worker.js": "/react-camera-control/service-worker.js",
+    "static/css/main.a2b7b0b6.chunk.css.map": "/react-camera-control/static/css/main.a2b7b0b6.chunk.css.map",
+    "static/js/2.d55809eb.chunk.js.LICENSE": "/react-camera-control/static/js/2.d55809eb.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7d5abbff.js",
+    "static/js/2.d55809eb.chunk.js",
+    "static/css/main.a2b7b0b6.chunk.css",
+    "static/js/main.40b6f3ef.chunk.js"
+  ]
+}
